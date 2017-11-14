@@ -9,6 +9,11 @@ module.exports = function(grunt) {
 						name: 'thirty',
 						width: '30%',
 						quality: 30
+					},
+					sizes: {
+						name: 'ten',
+						width: '10%',
+						quality: 30
 					}]
 				},
 					files: [{
