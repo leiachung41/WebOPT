@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 					},
 					{
 						name: 'seventy',
-						width: '70%',
+						width: '100%',
 						quality: 30
 					}]
 				},
