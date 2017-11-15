@@ -10,12 +10,15 @@
     <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> -->
     <script>
-        var Webfont = require('webfontloader');
+    var jsdom = require("jsdom");
+    jsdom.env( "https://nodejs.org/", [], function(err, win) {
+        var WebFont = require('webfontloader')(win);
         WebFont.load({
             google: {
                 families: ['Open Sans: 400', 'Open Sans: 700']
             }
         });
+    });
     </script>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/print.css" rel="stylesheet">
