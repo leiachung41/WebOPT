@@ -1,6 +1,7 @@
 {
     "name": "webopt",
     "devDependencies": {
+        "cssnano": "^3.10.0",
         "gm": "^1.23.0",
         "grunt": "^1.0.1",
         "grunt-responsive-images": "^0.1.9",
