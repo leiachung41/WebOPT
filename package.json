@@ -1,15 +1,16 @@
 {
     "name": "webopt",
     "devDependencies": {
-        "cssnano": "^3.10.0",
-        "gm": "^1.23.0",
         "grunt": "^1.0.1",
+        "grunt-ngrok": "^0.2.2",
+        "grunt-pagespeed": "^2.0.1",
         "grunt-responsive-images": "^0.1.9",
         "imagemagick": "^0.1.3",
+        "load-grunt-tasks": "^3.5.2",
+        "ngrok": "^2.2.23",
         "webfont": "^7.1.4"
     },
     "dependencies": {
-        "requirejs": "^2.3.5",
         "webfontloader": "^1.6.28"
     },
     "version": "1.0.0",
