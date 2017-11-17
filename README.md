@@ -2,7 +2,7 @@
 I will optimize a provided website with a number of optimization- and performance-related issues so that it achieves a target PageSpeed score and runs at 60 frames per second.
 
 ## Project Goals
-### 1 .PageSpeed Score: Critical Rendering Path
+### 1. PageSpeed Score: Critical Rendering Path
   - `index.html` achieves a `PageSpeed` score of at least 90 for Mobile and Desktop.
 ### 2. Getting Rid of Jank
   - **Frame Rate**
