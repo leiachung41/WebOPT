@@ -125,8 +125,18 @@
         };
     </script>
 
+
+    <!-- Google Analytics -->
+    <!-- <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script> -->
+    <!-- End Google Analytics -->
+
     <!-- add async attribute -->
-    <script src="https://cdn.jsdelivr.net/ga-lite/latest/ga-lite.min.js" async></script>
+    <!-- <script src="https://cdn.jsdelivr.net/ga-lite/latest/ga-lite.min.js" async></script>
     <script>
         (function(w,g){
             w['GoogleAnalyticsObject']=g;
@@ -138,6 +148,12 @@
         // Optional TODO: replace with your Google Analytics profile ID.
         ga('create', 'UA-XXXX-Y');
         ga('send', 'pageview');
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/ga-lite/latest/ga-lite.min.js" async></script>
+    <script>
+        var galite = galite || {};
+        galite.UA = 'UA-XXXXXX'; // Insert your tracking code here
     </script>
     <script async src="js/perfmatters.js"></script>
 </body>
