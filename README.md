@@ -1,55 +1,67 @@
-## Website Performance Optimization portfolio project
+# Project: Website Optimization
+I will optimize a provided website with a number of optimization- and performance-related issues so that it achieves a target PageSpeed score and runs at 60 frames per second.
 
-Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
+## Project Goals
+### 1. PageSpeed Score: Critical Rendering Path
+  - `index.html` achieves a `PageSpeed` score of at least 90 for Mobile and Desktop.
 
-To get started, check out the repository and inspect the code.
+### 2. Getting Rid of Jank
+  - **Frame Rate**:
+Optimizations made to `views/js/main.js` make `views/pizza.html` render with a consistent frame-rate at `60fps` when scrolling.
+  - **Computational Efficiency**:
+Time to resize pizzas is less than 5 ms using the pizza size slider on the `views/pizza.html` page. Resize time is shown in the browser developer tools.
 
-### Getting started
+### 3. Documentation
+  - **README**:
+A `README` file is included detailing all steps required to successfully run the application and outlines the optimizations that the student made in `index.html` and `views/js/main.js` for `pizza.html`.
+  - **Comments**:
+Comments in `views/js/main.js` for `pizza.html` are present and effectively explain longer code procedures.
 
-#### Part 1: Optimize PageSpeed Insights score for index.html
+## Project Details
+### 1. Installing / Setting
+  - Clone or download the [repository](https://github.com/udacity/frontend-nanodegree-mobile-portfolio)
+  - Set the project directory
+  - Install [Grunt](https://gruntjs.com/getting-started)
+```sh
+$ npm install -g grunt-cli
+$ npm install grunt--save-dev
+```
+  - Install [ngrok](https://www.npmjs.com/package/ngrok)
+```sh
+$ npm install ngrok --save-dev
+```
+  - Create `package.json`
+```
+$ npm init
+```
+  - Create `Gruntfile.js`
+  - Add the Grunt plugins to the project
+ ```
+$ npm install grunt-pagespeed --save-dev
+$ npm install load-grunt-tasks --save-dev
+ ```
+  - Run a local server
 
-Some useful tips to help you get started:
+### 2. Optimizations
+  - #### `index.html`
+    -  Remove the Google Web Font API `<link>` from `<head>`
+    -  Inline `style.css`
+    -  Add media attribute in `print.css`
+    -  Add script ga-lite, which is a small, cacheable subset of Google Analytics JS client, created by Jesse Luoto.
+  - #### `views/js/main.js`
+     - Before
 
-1. Check out the repository
-1. To inspect the site on your phone, you can run a local server
+### 3. Measuring
+  - #### Google PageSpeed Insights
+    - Before
+    - After
 
-  ```bash
-  $> cd /path/to/your-project-folder
-  $> python -m SimpleHTTPServer 8080
-  ```
+  - #### Chrome Developer Tools
+    - Before
+    - After
 
-1. Open a browser and visit localhost:8080
-1. Download and install [ngrok](https://ngrok.com/) to the top-level of your project directory to make your local server accessible remotely.
+## References
+  - [Grunt Getting started](https://gruntjs.com/getting-started)
+  - [ngrok - npm](https://www.npmjs.com/package/ngrok)
+  - [Grunt PageSpeed with ngrok for local testing](https://www.jamescryer.com/2014/06/12/grunt-pagespeed-and-ngrok-locally-testing/)
 
-  ``` bash
-  $> cd /path/to/your-project-folder
-  $> ./ngrok http 8080
-  ```
-
-1. Copy the public URL ngrok gives you and try running it through PageSpeed Insights! Optional: [More on integrating ngrok, Grunt and PageSpeed.](http://www.jamescryer.com/2014/06/12/grunt-pagespeed-and-ngrok-locally-testing/)
-
-Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!
-
-#### Part 2: Optimize Frames per Second in pizza.html
-
-To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js. 
-
-You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: [Chrome Dev Tools tips-and-tricks](https://developer.chrome.com/devtools/docs/tips-and-tricks).
-
-### Optimization Tips and Tricks
-* [Optimizing Performance](https://developers.google.com/web/fundamentals/performance/ "web performance")
-* [Analyzing the Critical Rendering Path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/analyzing-crp.html "analyzing crp")
-* [Optimizing the Critical Rendering Path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/optimizing-critical-rendering-path.html "optimize the crp!")
-* [Avoiding Rendering Blocking CSS](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-blocking-css.html "render blocking css")
-* [Optimizing JavaScript](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/adding-interactivity-with-javascript.html "javascript")
-* [Measuring with Navigation Timing](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/measure-crp.html "nav timing api"). We didn't cover the Navigation Timing API in the first two lessons but it's an incredibly useful tool for automated page profiling. I highly recommend reading.
-* <a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/eliminate-downloads.html">The fewer the downloads, the better</a>
-* <a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer.html">Reduce the size of text</a>
-* <a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization.html">Optimize images</a>
-* <a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching.html">HTTP caching</a>
-
-### Customization with Bootstrap
-The portfolio was built on Twitter's <a href="http://getbootstrap.com/">Bootstrap</a> framework. All custom styles are in `dist/css/portfolio.css` in the portfolio repo.
-
-* <a href="http://getbootstrap.com/css/">Bootstrap's CSS Classes</a>
-* <a href="http://getbootstrap.com/components/">Bootstrap's Components</a>
