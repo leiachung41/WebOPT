@@ -16,9 +16,9 @@ A `README` file is included detailing all steps required to successfully run the
 Comments in `views/js/main.js` for `pizza.html` are present and effectively explain longer code procedures.
 
 ## Project Details
-#### 1. Installing / Getting started
-#### 2. Optimizations
-#### 3. Measuring
+### 1. Installing / Getting started
+### 2. Optimizations
+### 3. Measuring
   - Google PageSpeed Insights
   - Chrome Developer Tools
 
