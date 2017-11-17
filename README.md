@@ -6,15 +6,15 @@ I will optimize a provided website with a number of optimization- and performanc
   - `index.html` achieves a `PageSpeed` score of at least 90 for Mobile and Desktop.
 
 ### 2. Getting Rid of Jank
-  - **Frame Rate**
+  - **Frame Rate**:
 Optimizations made to `views/js/main.js` make `views/pizza.html` render with a consistent frame-rate at `60fps` when scrolling.
-  - **Computational Efficiency**
+  - **Computational Efficiency**:
 Time to resize pizzas is less than 5 ms using the pizza size slider on the `views/pizza.html` page. Resize time is shown in the browser developer tools.
 
 ### 3. Documentation
-  - **README**
+  - **README**:
 A `README` file is included detailing all steps required to successfully run the application and outlines the optimizations that the student made in `index.html` and `views/js/main.js` for `pizza.html`.
-  - **Comments**
+  - **Comments**:
 Comments in `views/js/main.js` for `pizza.html` are present and effectively explain longer code procedures.
 
 ## Project Details
