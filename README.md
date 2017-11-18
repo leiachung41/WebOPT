@@ -55,8 +55,9 @@ $ npm install load-grunt-tasks --save-dev
     - Move `perfmatters.js` script from `<head>` to `<body`>.
     - Optimize image files `profilepic.jpg` and `pizzeria.jpg` using grunt plugin responsive_images.
 
-  - #### Chrome Developer Tools
-    - Before
+  - #### `views/js/main.js`
+    - Remove `function determineDx` and Adjust `function sizeSwitcher`.
+    - Create `function changePizzaSizes`. For loop in the function, remove `document.qurtySelectorAll` iteration and minify it.
     - After
 
   - #### `views/js/main.js`
