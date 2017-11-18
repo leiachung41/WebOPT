@@ -62,14 +62,6 @@ $ npm install load-grunt-tasks --save-dev
     - Add the `updatePositions` function as a parameter in `window.addEventListener()`.
     - Decrease the number of elem from 200 to 31 in the for loop in `document.addEventListener()`.
 
-
-  - #### `views/js/main.js`
-     - Remove `function determineDx` and Adjust `function sizeSwitcher`.
-     - Create `function changePizzaSizes`. For loop in the function, remove `document.qurtySelectorAll` iteration and minify it.
-     - Move `var scrollTop` outlide the loop in the `function updatePositions`.
-     - Add the `updatePositions` function as a parameter in `window.addEventListener()`.
-     - Decrease the number of elem from 200 to 31 in the for loop in `document.addEventListener()`.
-
 ### 3. Measuring
   - #### Google PageSpeed Insights
     - Before
