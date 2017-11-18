@@ -48,12 +48,13 @@ $ npm install load-grunt-tasks --save-dev
 
 ### 2. Optimizations
   - #### `index.html`
-    -  Move the Google Web Font API `<link>` from `<head>` to `<body`> with using Webfontconfig plugin.
-    -  Inline `style.css`.
-    -  Add media attribute in `print.css`.
-    -  Move Google Analytics script from `<head` to `<body>`. Add script ga-lite, which is a small, cacheable subset of Google Analytics JS client.
-    -  Move `perfmatters.js` script from `<head>` to `<body`>.
-  - #### `views/js/main.js`
+    - Move the Google Web Font API `<link>` from `<head>` to `<body`> with using Webfontconfig plugin.
+    - Inline `style.css`.
+    - Add media attribute in `print.css`.
+    - Move Google Analytics script from `<head` to `<body>`. Add script ga-lite, which is a small, cacheable subset of Google Analytics JS client.
+    - Move `perfmatters.js` script from `<head>` to `<body`>.
+    - Optimize image files `profilepic.jpg` and `pizzeria.jpg` using grunt plugin responsive_images.
+  - #### `views/js/main.js`
      - Remove `function determineDx` and Adjust `function sizeSwitcher`.
      - Create `function changePizzaSizes`. For loop in the function, remove `document.qurtySelectorAll` iteration and minify it.
      - Move `var scrollTop` outlide the loop in the `function updatePositions`.
@@ -74,3 +75,7 @@ $ npm install load-grunt-tasks --save-dev
   - [ngrok - npm](https://www.npmjs.com/package/ngrok)
   - [Grunt PageSpeed with ngrok for local testing](https://www.jamescryer.com/2014/06/12/grunt-pagespeed-and-ngrok-locally-testing/)
   - [Analyze Runtime Performamce](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/)
+  - [Inline CSS](https://developers.google.com/speed/docs/insights/InlineCSS)
+  - [Optimize CSS Delivery](https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery)
+  - [Remove Render-Blocking JavaScript](https://developers.google.com/speed/docs/insights/BlockingJS)
+  
