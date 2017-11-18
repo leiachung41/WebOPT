@@ -65,11 +65,25 @@ $ npm install load-grunt-tasks --save-dev
 ### 3. Measuring
   - #### Google PageSpeed Insights
     - Before
+      - Mobile: Poor 27/100
+      - DeskTop: Poor 29/100
     - After
+      - Mobile: Good 93/100
+      - DeskTop: Good 94/100
 
   - #### Chrome Developer Tools
     - Before
+      - Time to generate pizzas on load: 13.29000000000002ms
+      - Average scripting time to generate last 10 frames: 28.757999999999907ms
+      - Average scripting time to generate last 10 frames: 20.948499999999967ms
+      - Time to resize pizzas: 107.54999999999927ms
+      - Time to resize pizzas: 129.71499999999833ms
     - After
+      - Time to generate pizzas on load: 11.090000000000003ms
+      - Average scripting time to generate last 10 frames: 3.117999999999995ms
+      - Average scripting time to generate last 10 frames: 0.4119999999998981ms
+      - Time to resize pizzas: 0.6399999999994179ms
+      - Time to resize pizzas: 0.3699999999971624ms
 
 ## References
   - [Grunt Getting started](https://gruntjs.com/getting-started)
